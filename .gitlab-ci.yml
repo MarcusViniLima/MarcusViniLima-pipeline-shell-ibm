@@ -1,5 +1,15 @@
 image: maven
+
+stages:
+- build
+-test
+
 build:
   stage: build
   script:
   - mvn package -Dmaven.test.skip
+  
+  test:
+  stage: test
+  script:
+  - mvn test

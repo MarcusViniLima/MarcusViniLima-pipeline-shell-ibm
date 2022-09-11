@@ -6,4 +6,4 @@ jobs:
   build:
     steps:
     - name: Rodando um script shell
-       run: echo "pipeline gitactions"
+       run: echo "pipeline com gitactions"

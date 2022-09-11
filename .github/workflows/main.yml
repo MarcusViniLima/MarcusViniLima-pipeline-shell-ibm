@@ -1,0 +1,10 @@
+name: CI_IBM
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: maven:3.8.3-openjdk-17
+    steps:
+    - name: Rodando um cript shell
+      run: echo "pipelime git actions"

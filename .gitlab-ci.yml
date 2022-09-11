@@ -1,6 +1,5 @@
-job:
-  script:
-  - echo "Olá alunos estamos aprendendo sobre pipeline"
+image: maven
 build:
+  stage: build
   script:
-  - echo "É só mais um teste"
+  - mvn package -Dmaven.test.skip
